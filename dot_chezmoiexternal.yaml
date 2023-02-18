@@ -1,0 +1,4 @@
+"usr/local/bin/docker-compose":
+  type: file
+  url: "https://github.com/docker/compose-switch/releases/download/v{{ template "get-github-latest-version" list "docker/compose-switch" $cache }}/docker-compose-linux-{{ .chezmoi.arch }}"
+  executable: true
